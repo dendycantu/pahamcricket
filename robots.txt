@@ -1,0 +1,22 @@
+# Allow all bots to access the main site
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /test/
+Disallow: /temp/
+Disallow: /*?*
+Allow: /
+
+# Sitemap location
+Sitemap: https://<username>.github.io/<repository>/sitemap.xml
+
+# Optional: Specific rules for certain bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block certain bots (if needed)
+User-agent: BadBot
+Disallow: /
